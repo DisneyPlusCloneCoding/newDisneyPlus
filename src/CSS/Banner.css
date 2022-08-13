@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav--Banner {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div--Banner {
+  width: 13%;
+  height: 76%;
+  background-color: #343643;
+  border-radius: 15px;
+  border: 4px solid #4B4D5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img--div--Banner {
+  width: 80%;
+  height: 75%;
+  border-radius: 15px;
+}
+
+.national--div--Banner {
+  width: 100%;
+  height: 75%;
+  border-radius: 15px;
+}

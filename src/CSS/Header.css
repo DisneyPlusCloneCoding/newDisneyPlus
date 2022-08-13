@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto";
+  font-size: small;
+}
+
+.header--Header {
+  display: flex;
+  background-color: #1f2330;
+  height: 10vh;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.img--header {
+  width: 8%;
+  height: 100%;
+}
+
+.img--Link {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Link--Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  width: 70%;
+  display: flex;
+  align-content: center;
+  list-style: none;
+  color: white;
+}

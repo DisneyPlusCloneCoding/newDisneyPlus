@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.plus2--title {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.plus2--main {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plus2--pick {
+  margin-bottom: 3%;
+  width: 21%;
+  height: 30%;
+}
+
+.img--picks {
+  width: 100%;
+  height: 100%;
+}
+
+.plus2--pick:hover {
+  animation-duration: 0.5s;
+  animation-name: whenHover;
+  animation-fill-mode: forwards;
+  outline: 3.5px solid rgba(255, 255, 255, 0.699);
+}
+
+@keyframes whenHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

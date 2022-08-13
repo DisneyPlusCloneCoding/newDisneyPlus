@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  color: white;
+  font-size: medium;
+}
+
+.section--SideBanner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+.main--SideBanner {
+  width: 1200vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.img--selection {
+  width: 100%;
+  height: 100%;
+}
+
+.movieCard {
+  width: 20vw;
+  height: 100%;
+}
+
+.movieCard:hover {
+  animation-duration: 0.5s;
+  animation-name: whenHover;
+  animation-fill-mode: forwards;
+  outline: 3.5px solid rgba(255, 255, 255, 0.699);
+}
+
+@keyframes whenHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.img--button {
+  width: 200%;
+  height: 50%;
+}
+
+.back--SideBanner, .next--SideBanner {
+  width: 3vw;
+  height: 25vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.225);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 41px;
+}
+
+.back--SideBanner {
+  left: 0;
+}
+
+.next--SideBanner {
+  left: 97vw;
+}

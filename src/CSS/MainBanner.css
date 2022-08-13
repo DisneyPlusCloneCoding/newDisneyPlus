@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 1300vw;
+  height: 55vh;
+  display: flex;
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.div--MovieCards {
+  width: 100vw;
+}
+
+.div--MovieCards:hover {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  outline: 3.5px solid rgba(255, 255, 255, 0.699);
+}
+
+.img--MovieCards {
+  width: 100%;
+  height: 100%;
+}
+
+.back, .next {
+  width: 3vw;
+  height: 55vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.225);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  top: 10vh;
+  left: 0;
+}
+
+.next {
+  top: 10vh;
+  left: 97vw;
+}
+
+.img--button--MainBanner {
+  width: 200%;
+  height: 20%;
+}

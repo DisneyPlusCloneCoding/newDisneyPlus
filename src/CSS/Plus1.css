@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.h1--Plus {
+  height: 15vh;
+  font-size: xx-large;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.main--Plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p--main--Plus {
+  color: white;
+}
+
+.p--main--Plus:first-of-type {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

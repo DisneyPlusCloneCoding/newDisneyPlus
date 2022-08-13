@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.header--Search {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2330;
+  position: sticky;
+  top: 10vh;
+  z-index: 1;
+}
+
+.inputBox {
+  width: 29%;
+  height: 36%;
+  background-color: #373A4A;
+  display: flex;
+  border-radius: 5px;
+}
+
+.inputBox:hover {
+  outline: 2px solid white;
+}
+
+.img--input--Search {
+  width: 11%;
+  height: 100%;
+  padding: 4px 8px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.input--Search {
+  width: 90%;
+  height: 100%;
+  border: none;
+  background-color: #373A4A;
+  outline: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.inputBox:focus-within {
+  outline: 2px solid white;
+  background-color: #4F525F;
+}
+
+.input--Search:focus {
+  background-color: #4F525F;
+}
+
+.input--Search::placeholder {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 500;
+  font-size: medium;
+}
+
+.section--Search {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.collections {
+  margin-bottom: 3%;
+  width: 21%;
+  height: 30%;
+}
+
+.img--collections {
+  width: 100%;
+  height: 100%;
+}
+
+.img--collections:hover {
+  animation-duration: 0.5s;
+  animation-name: whenHover;
+  animation-fill-mode: forwards;
+  outline: 3.5px solid rgba(255, 255, 255, 0.699);
+}
+
+@keyframes whenHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.p--Search {
+  color: white;
+  margin-left: 1.5%;
+  padding-bottom: 0.5%;
+}

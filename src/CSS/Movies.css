@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main--Movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movies {
+  width: 21%;
+  height: 25vh;
+  margin-top: 30px;
+}
+
+.movies:hover {
+  animation-duration: 0.5s;
+  animation-name: whenHover;
+  animation-fill-mode: forwards;
+  outline: 3.5px solid rgba(255, 255, 255, 0.699);
+}
+
+@keyframes whenHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
